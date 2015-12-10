@@ -2,7 +2,7 @@
 
 <ul>
 <% @movies.each do |movie| %>
-  <li><%= movie %></li>
+  <li><strong><%= movie.title %></strong> &#40;<%= movie.rating %>&#41;: <%= number_to_currency(movie.total_gross) %> Total Gross</li>
 <% end %>
 </ul>
 
